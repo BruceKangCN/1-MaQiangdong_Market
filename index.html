@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>马强东商城</title>
+		<link rel="stylesheet" type="text/css" href="css/default_index.css" />
+		<script type="text/javascript" src="js/sha1.js"></script>
+		<script type="text/javascript" src="js/chtheme.js"></script>
+		<script type="text/javascript" src="js/calculator.js"></script>
+		<script type="text/javascript" src="js/itemlist.js"></script>
+		<!--<script type="text/javascript" src="js/submut.js"></script>-->
+	</head>
+	<body>
+		<div id="headerdiv" >
+			<img src="img/logo.png" id="logo" >
+			<div id="loginzone">
+				<form action="#" method="" id="loginform">
+					<span>账户</span>
+					<input type="text" name="user" id="user" value="" />
+					<span>密码</span>
+					<input type="password" name="pw" id="pw" value="" />
+					<input type="button" name="submit" id="submit" value="登录" onclick="getSubmit()" />
+				</form>
+			</div>
+			<img src="img/QRcode.png" id="qrcode" >
+			<div id="theme">
+				<div id="color1" class="themecolor" onclick="chtheme1()"></div>
+				<div id="color2" class="themecolor" onclick="chtheme2()"></div>
+				<div id="color3" class="themecolor" onclick="chtheme3()"></div>
+				<div id="color4" class="themecolor" onclick="chtheme4()"></div>
+				<div id="color5" class="themecolor" onclick="chtheme5()"></div>
+				<span>Theme</span>
+			</div>
+		</div>
+		<div id="calc">
+			<div id="calc_title">
+				计算器
+			</div>
+			<input type="text" name="num1" id="num1" class="inputnum" value="" />
+			<input type="text" name="num2" id="num2" class="inputnum" value="" />
+			<br>
+			<input type="button" name="" id="btn_add" class="calc_btn" value="+" onclick="calc_add()" />
+			<input type="button" name="" id="btn_minus" class="calc_btn" value="-" onclick="calc_min()" />
+			<input type="button" name="" id="btn_time" class="calc_btn" value="*" onclick="calc_time()" />
+			<input type="button" name="" id="btn_divide" class="calc_btn" value="/" onclick="calc_dvd()" />
+			<br>
+			<input type="text" name="res" id="result" value="0" readonly="readonly" />
+		</div>
+		<div>
+			<ul id="itemlist">
+				<li class="itemlist">
+					<div class="listbox">
+						<div class="itemno">
+							00000001
+						</div>
+						<img src="img/ChMkJloKzvWIV593AADI1h1gUSwAAiJ6gO9KsgAAMju766.jpg" class="itempic" >
+						<div class="itemname">
+							Xbox One 天蝎座
+						</div>
+						<div class="itemprice">
+							<select id="slt1" oninput="chprc1()">
+								<option value ="CNY">¥</option>
+								<option value ="USD">$</option>
+							</select>
+							<span id="price1">4999.00</span>
+						</div>
+						<div class="totalprice">
+							<span class="currency" id="crc1">¥</span>
+							<input type="text" name="totalprice" id="totalprice1" class="totalprice" value="0" readonly="readonly" />
+						</div>
+						<div class="itemqtt">
+							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem1()" />
+							<input type="text" name="" id="qtt1" class="itemquantity" value="0" onchange="chprc1()"/></label>
+							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem1()" />
+						</div>
+					</div>
+				</li>
+				<li class="itemlist"  >
+					<div class="listbox">
+						<div class="itemno">
+							00000002
+						</div>
+						<img src="img/71pFB-gWFdL._SX679_.jpg" class="itempic" >
+						<div class="itemname">
+							Playstation 4 Pro
+						</div>
+						<div class="itemprice">
+							<select id="slt2" oninput="chprc2()">
+								<option value ="CNY">¥</option>
+								<option value ="USD">$</option>
+							</select>
+							<span id="price2">2999.00</span>
+						</div>
+						<div class="totalprice">
+							<span class="currency" id="crc2">¥</span>
+							<input type="text" name="totalprice" id="totalprice2" class="totalprice" value="0" readonly="readonly" />
+						</div>
+						<div class="itemqtt">
+							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem2()" />
+							<input type="text" name="" id="qtt2" class="itemquantity" value="0" onchange="chprc2()"/></label>
+							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem2()" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
