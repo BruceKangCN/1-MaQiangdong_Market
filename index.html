@@ -24,11 +24,11 @@
 			</div>
 			<img src="img/QRcode.png" id="qrcode" >
 			<div id="theme">
-				<div id="color1" class="themecolor" onclick="chtheme1()"></div>
-				<div id="color2" class="themecolor" onclick="chtheme2()"></div>
-				<div id="color3" class="themecolor" onclick="chtheme3()"></div>
-				<div id="color4" class="themecolor" onclick="chtheme4()"></div>
-				<div id="color5" class="themecolor" onclick="chtheme5()"></div>
+				<div id="color1" class="themecolor" onclick="chtheme(0)"></div>
+				<div id="color2" class="themecolor" onclick="chtheme(1)"></div>
+				<div id="color3" class="themecolor" onclick="chtheme(2)"></div>
+				<div id="color4" class="themecolor" onclick="chtheme(3)"></div>
+				<div id="color5" class="themecolor" onclick="chtheme(4)"></div>
 				<span>Theme</span>
 			</div>
 		</div>
@@ -58,20 +58,20 @@
 							Xbox One 天蝎座
 						</div>
 						<div class="itemprice">
-							<select id="slt1" oninput="chprc1()">
+							<select id="slt1" class="slt" oninput="chprc(0)">
 								<option value ="CNY">¥</option>
 								<option value ="USD">$</option>
 							</select>
-							<span id="price1">4999.00</span>
+							<span id="price1" class="price">4999.00</span>
 						</div>
 						<div class="totalprice">
 							<span class="currency" id="crc1">¥</span>
-							<input type="text" name="totalprice" id="totalprice1" class="totalprice" value="0" readonly="readonly" />
+							<input type="text" name="totalprice" id="totalprice1" class="totalpricenum" value="0" readonly="readonly" />
 						</div>
 						<div class="itemqtt">
-							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem1()" />
-							<input type="text" name="" id="qtt1" class="itemquantity" value="0" onchange="chprc1()"/>
-							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem1()" />
+							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem(0)" />
+							<input type="text" name="" id="qtt1" class="itemquantity" value="0" onchange="chprc(0)"/>
+							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem(0)" />
 						</div>
 					</div>
 				</li>
@@ -85,20 +85,20 @@
 							Playstation 4 Pro
 						</div>
 						<div class="itemprice">
-							<select id="slt2" oninput="chprc2()">
+							<select id="slt2" class="slt" oninput="chprc(1)">
 								<option value ="CNY">¥</option>
 								<option value ="USD">$</option>
 							</select>
-							<span id="price2">2999.00</span>
+							<span id="price2" class="price">2999.00</span>
 						</div>
 						<div class="totalprice">
 							<span class="currency" id="crc2">¥</span>
-							<input type="text" name="totalprice" id="totalprice2" class="totalprice" value="0" readonly="readonly" />
+							<input type="text" name="totalprice" id="totalprice2" class="totalpricenum" value="0" readonly="readonly" />
 						</div>
 						<div class="itemqtt">
-							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem2()" />
-							<input type="text" name="" id="qtt2" class="itemquantity" value="0" onchange="chprc2()"/>
-							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem2()" />
+							<input type="button" name="" id="" class="itemminus" value="-" onclick="minitem(1)" />
+							<input type="text" name="" id="qtt2" class="itemquantity" value="0" onchange="chprc(1)"/>
+							<input type="button" name="" id="" class="itemadd" value="+" onclick="additem(1)" />
                         </div>
 					</div>
 				</li>

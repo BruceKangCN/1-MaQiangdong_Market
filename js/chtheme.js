@@ -1,19 +1,12 @@
-function chtheme1(){
-	document.body.style.backgroundColor="#FFA800";
-}
+var i=0;
 
-function chtheme2(){
-	document.body.style.backgroundColor="#000000";
-}
-
-function chtheme3(){
-	document.body.style.backgroundColor="#FFFFFF";
-}
-
-function chtheme4(){
-	document.body.style.backgroundColor="#1A3AF9";
-}
-
-function chtheme5(){
-	document.body.style.backgroundColor="#1AF95E";
+function chtheme(i){
+	switch (i){
+		case 0:document.body.style.backgroundColor="#FFA800";break;
+		case 1:document.body.style.backgroundColor="#000000";break;
+		case 2:document.body.style.backgroundColor="#FFFFFF";break;
+		case 3:document.body.style.backgroundColor="#1A3AF9";break;
+		case 4:document.body.style.backgroundColor="#1AF95E";break;
+		default:document.body.style.backgroundColor="#FFA800";break;
+	}
 }
